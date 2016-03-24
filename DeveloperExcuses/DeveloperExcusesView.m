@@ -63,9 +63,9 @@
     rl.size.height = s.height;
     rl.origin.y = [self activeScreenRect].size.height/2;
     self.label.frame = rl;
-    self.label.textColor = [NSColor blackColor];
+    self.label.textColor = [NSColor whiteColor];
 
-    [[NSColor whiteColor] setFill];
+    [[NSColor blackColor] setFill];
     NSRectFill(rect);
 }
 
@@ -105,7 +105,7 @@
     self.label.backgroundColor = [NSColor clearColor];
     [self.label setEditable:NO];
     [self.label setBezeled:NO];
-    self.label.textColor = [NSColor blackColor];
+    self.label.textColor = [NSColor whiteColor];
     self.label.font = [NSFont fontWithName:@"Courier" size:24.0];
     self.label.stringValue = @"Loading...";
     [self addSubview:self.label];
